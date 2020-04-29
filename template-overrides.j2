@@ -1,0 +1,9 @@
+{% extends parent_template %}
+
+# Horizon
+{% block horizon_footer %}
+RUN pip --no-cache-dir install git+https://github.com/lostmap/django-summernote.git@test \
+    && mkdir /var/lib/kolla/venv/lib/python2.7/site-packages/media \
+    && chown horizon:horizon /var/lib/kolla/venv/lib/python2.7/site-packages/media
+{% endblock %}
+
