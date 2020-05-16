@@ -3,6 +3,8 @@
 # Horizon
 {% block horizon_footer %}
 RUN pip --no-cache-dir install git+https://github.com/lostmap/django-summernote.git@test \
+    && pip --no-cache-dir install boto3 \
+    && pip --no-cache-dir install django-storages \
     && mkdir /var/lib/kolla/venv/lib/python2.7/site-packages/media \
     && chown horizon:horizon /var/lib/kolla/venv/lib/python2.7/site-packages/media
 {% endblock %}

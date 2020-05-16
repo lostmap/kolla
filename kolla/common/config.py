@@ -515,9 +515,9 @@ SOURCES = {
         'location': ('$tarballs_base/karbor/'
                      'karbor-1.4.0.tar.gz')},
     'keystone-base': {
-        'type': 'url',
-        'location': ('$tarballs_base/keystone/'
-                     'keystone-16.0.0.tar.gz')},
+        'type': 'git',
+        'reference': 'stable/train',
+        'location': ('https://github.com/lostmap/keystone.git')},
     'kuryr-base': {
         'type': 'url',
         'location': ('$tarballs_base/kuryr/'

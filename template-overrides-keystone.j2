@@ -1,0 +1,9 @@
+{% extends parent_template %}
+
+# Keystone
+{% block keystone_footer %}
+RUN mkdir -p /etc/keystone/credential-keys \
+    && chown -R keystone:keystone /etc/keystone/credential-keys \
+    && chmod 700 /etc/keystone/credential-keys
+{% endblock %}
+
