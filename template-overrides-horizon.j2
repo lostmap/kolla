@@ -4,7 +4,7 @@
 {% block horizon_footer %}
 RUN pip uninstall django-summernote -y \
     && pip --no-cache-dir install git+https://github.com/lostmap/django-summernote.git@test \
-    && pip --no-cache-dir install git+https://github.com/lostmap/python-mistralclient.git@test
+    && pip --no-cache-dir install git+https://github.com/lostmap/python-mistralclient.git@test \
     && pip --no-cache-dir install boto3 \
     && pip --no-cache-dir install pathlib \
     && mkdir /var/lib/kolla/venv/lib/python2.7/site-packages/media \
